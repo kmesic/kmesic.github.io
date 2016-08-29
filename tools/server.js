@@ -5,5 +5,5 @@
 
 var connect = require('connect');
 var serveStatic = require('serve-static');
-connect().use(serveStatic('public')).listen(8080);
+connect().use(serveStatic('.')).listen(8080);
 console.log("Web Server running at http://localhost:8080/");
