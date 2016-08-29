@@ -1,6 +1,8 @@
 var Path = require('path');
 var webpack = require('webpack');
 
+require('es6-promise').polyfill();
+
 module.exports = {
 	// Modules to loaded on startup.
     // Last modules in the list is exported as specified in 'output'.
@@ -58,7 +60,6 @@ module.exports = {
                 test: /\.scss$/,
                 loader: 'style!css!sass?outputStyle=expanded&' +
                     'includePaths[]=' +
-                        (Path.resolve(__dirname, 'node_modules/grommet/node_modules')) + '&' +
                         (Path.resolve(__dirname, 'node_modules'))
             },
             // Match all .css files.
@@ -66,7 +67,6 @@ module.exports = {
                 test: /\.css$/,
                 loader: 'style!css?' +
                     'includePaths[]=' +
-                        (Path.resolve(__dirname, 'node_modules/grommet/node_modules')) + '&' +
                         (Path.resolve(__dirname, 'node_modules'))
             },
             // Match all .json files.

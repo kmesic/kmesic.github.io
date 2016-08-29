@@ -15,7 +15,7 @@ module.exports = React.createClass({
         };
     },
 
-    handleSelect: function(eventKey, event) {
+    handleSelect: function(eventKey) {
         this.setState({
             active: eventKey
         });

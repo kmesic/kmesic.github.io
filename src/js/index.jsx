@@ -1,6 +1,7 @@
 var React = require('react'),
     ReactDOM = require('react-dom'),
     Router = require('react-router/lib/Router'),
+    HashHistory = require('react-router/lib/hashHistory'),
     Route = require('react-router/lib/Route'),
     IndexRedirect = require('react-router/lib/IndexRedirect'),
     Home = require('Home'),
@@ -10,6 +11,11 @@ var React = require('react'),
     Work = require('Work'),
     Contact = require('Contact'),
     NavigationBar = require('NavigationBar');
+
+require('../scss/bootstrap/css/bootstrap.min.css');
+require('../scss/bootstrap/css/bootstrap-theme.min.css');
+require('../scss/index.scss');
+
 
 var App = React.createClass({
     
@@ -29,7 +35,7 @@ var App = React.createClass({
 
 ReactDOM.render(
     (
-        <Router>
+        <Router history={HashHistory}>
             <Route path="/" component={App}>
                 <IndexRedirect to="home"/>
                 <Route path="home" component={Home} />
