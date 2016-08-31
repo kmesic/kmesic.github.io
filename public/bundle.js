@@ -25226,7 +25226,7 @@
 	                    { className: 'container' },
 	                    'System.out.println(\'Hello!\');'
 	                ),
-	                React.createElement(Avatar, { className: 'avatar sb-avatar', src: 'avatar.jpg', size: 300, round: true }),
+	                React.createElement(Avatar, { className: 'avatar sb-avatar', src: 'avatar.JPG', size: 300, round: true }),
 	                React.createElement(
 	                    'p',
 	                    { className: 'container' },
