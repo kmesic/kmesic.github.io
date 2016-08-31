@@ -11,6 +11,7 @@
   "author": "Kenan Mesic",
   "license": "BSD-2-Clause",
   "dependencies": {
+    "react-avatar": "^2.2.0",
     "webpack": "~1.13.1"
   },
   "devDependencies": {
